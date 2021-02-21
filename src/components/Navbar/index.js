@@ -1,10 +1,33 @@
-import React from 'react'
+import React from 'react';
+import {FaBars} from 'react-icons/fa';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
-        <div>
-            <h1>Nav</h1>
-        </div>
+        <>
+          <Nav>
+              <NavbarContainer>
+                  <NavLogo to='/'>LAN</NavLogo>
+                  <MobileIcon onClick={toggle}>
+                      <FaBars />
+                  </MobileIcon>
+                  <NavMenu>
+                      <NavItem>
+                          <NavLinks to='usluge'>USLUGE</NavLinks>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks to='klijenti'>KLIJENTI</NavLinks>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks to='about'>O NAMA</NavLinks>
+                      </NavItem>
+                  </NavMenu>
+                  <NavBtn>
+                      <NavBtnLink to='/forma'>KONTAKTIRAJTE NAS</NavBtnLink>
+                  </NavBtn>
+              </NavbarContainer>
+          </Nav>
+        </>
     )
 }
 
