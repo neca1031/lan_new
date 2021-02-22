@@ -14,12 +14,21 @@ align-items: center;
 font-size: 1rem;
 position: sticky;
 top: 0;
-z-index: 10;
+z-index: 999;
 
 @media screen and (max-width: 960px) {
     transition: 0.8 all ease;
 
 }
+/* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999; */
 `
 
 export const NavbarContainer = styled.div `
@@ -30,6 +39,11 @@ export const NavbarContainer = styled.div `
  width: 100%;
  padding: 0 24px;
  max-width: 1100px;
+ /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px; */
 `
 export const NavLogo = styled(LinkR)`
  color: red;
