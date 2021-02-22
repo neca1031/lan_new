@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinksR, NavBtn, NavBtnLink} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
     return (
@@ -13,17 +13,20 @@ const Navbar = ({ toggle }) => {
                   </MobileIcon>
                   <NavMenu>
                       <NavItem>
-                          <NavLinks to='usluge'>USLUGE</NavLinks>
+                          <NavLinksR to='/usluge'>USLUGE</NavLinksR>
                       </NavItem>
                       <NavItem>
                           <NavLinks to='klijenti'>KLIJENTI</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='about'>O NAMA</NavLinks>
+                          <NavLinksR to='/about'>O NAMA</NavLinksR>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks to='footer'>KONTAKT</NavLinks>
                       </NavItem>
                   </NavMenu>
                   <NavBtn>
-                      <NavBtnLink to='/forma'>KONTAKTIRAJTE NAS</NavBtnLink>
+                      <NavBtnLink to='/forma'>POSALJITE UPIT</NavBtnLink>
                   </NavBtn>
               </NavbarContainer>
           </Nav>
