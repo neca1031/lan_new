@@ -5,8 +5,9 @@ import InfoSection from '../InfoSection';
 import { homeObjOne } from '../InfoSection/Data';
 import Navbar from '../Navbar'
 import Sidebar from '../Sidebar'
-import Klijenti from '../Klijenti';
+import Kartice from '../Kartice';
 import Usluge from '../Usluge';
+import Footer from '../Footer';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,8 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSection />
             <Usluge />
-            <Klijenti />
+            <Kartice />
+            <Footer />
         </>
     )
 }

@@ -14,7 +14,7 @@ align-items: center;
 font-size: 1rem;
 position: sticky;
 top: 0;
-z-index: 999;
+z-index: 10;
 
 @media screen and (max-width: 960px) {
     transition: 0.8 all ease;
@@ -100,7 +100,7 @@ export const NavLinks = styled(LinkS) `
  cursor: pointer;
 
  &.active {
-     border-bottom: 3px solid #01bf71;
+     border-bottom: 3px solid red;
  }
 `
 

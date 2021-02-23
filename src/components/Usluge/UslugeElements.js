@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
+export const Usluge1 = styled.div `
+padding: 4rem;
+background: red;
+margin-bottom: 24px;
+
+`
 export const UslugeContainer = styled.div `
  height: 100vh;
  display: flex;
  flex-direction: column;
- flex-flow: column wrap;
+ /* flex-flow: column wrap; */
  justify-content: center;
  align-items: center;
  background: #010606;
@@ -14,19 +20,19 @@ export const UslugeContainer = styled.div `
  
 
  @media screen and (max-width: 768px) {
-     height: 1100px;
+     height: 1100px
  };
 
  @media screen and (max-width: 480px) {
-     height: 2000px;
+     height: 2000px
  };
 `
 
 export const UslugeWrapper = styled.div `
  max-width: 1000px;
  max-height: 2000px;
- 
- margin: 0 auto;
+ position: relative;
+ margin: 50px 0 45px;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr;
  align-items: center;
@@ -40,7 +46,7 @@ export const UslugeWrapper = styled.div `
  @media screen and (max-width: 768px) {
      grid-template-columns: 1fr;
      padding: 0 20px;
-     height: 100%;
+     
      
  }
 `
@@ -48,6 +54,7 @@ export const UslugeWrapper = styled.div `
 export const UslugeCard = styled.div `
  background: #fff;
  display: flex;
+ flex: 1;
  flex-direction: column;
  justify-content: flex-start;
  align-items: center;
